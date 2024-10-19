@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom";
 import { cuisineData, restaurantsData } from "../data/data";
 
 const Home = () => {
@@ -62,7 +62,6 @@ const Home = () => {
           </div>
         )}
 
-        {/* Optionally show a message if no restaurants are found */}
         {currentCuisine && filteredRestaurants.length === 0 && (
           <div className="mt-8">
             <p className="text-lg font-semibold">
